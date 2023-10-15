@@ -1,0 +1,2278 @@
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 8%;
+  height: 100%;
+}
+nav h3 {
+  color: white;
+  margin-top: 2.5%;
+  margin-right: 1%;
+  font-size: 90%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-left: 47%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 60%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  margin: 1vh;
+  font-size: 120%;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 75vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 8%;
+    font-size: 100%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 16.4%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 6%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    text-align: center;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    max-width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+
+.more-recipes {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.recipe-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 30% 15% 15% 20%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 88%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(max-width:300px) {
+
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 4%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 9%;
+  margin-right: 1%;
+  font-size: 5%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 1%;
+  padding-left: 1%;
+  font-size: 20%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 40vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 15%;
+    font-size: 60%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 40.5%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 14%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    text-align: center;
+    margin-left: 40%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+    font-size: 50%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -62%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 80%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+}
+
+.recipe-list article img {
+    width: 200%;
+    height: auto;
+}
+
+.recipe-list article div h3 {
+    font-size: 1000%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15% 20%;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 550%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 35%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 40%;
+}
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(min-width:301px) {
+
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 4%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 9%;
+  margin-right: 1%;
+  font-size: 10%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-top: 1%;
+  padding-left: 1%;
+  font-size: 20%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 40vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 16%;
+    font-size: 60%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 40.5%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 14%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    text-align: center;
+    margin-left: 40%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+    font-size: 50%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -62%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 80%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+}
+
+.recipe-list article img {
+    width: 200%;
+    height: auto;
+}
+
+.recipe-list article div h3 {
+    font-size: 1000%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15% 20%;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 550%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 35%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 40%;
+}
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(min-width:600px) {
+
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 8%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 6%;
+  margin-right: 1%;
+  font-size: 60%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-left: 14%;
+  font-size: 50%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 40vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 8%;
+    font-size: 60%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 20.6%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 12%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    margin-left: 41%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+    font-size: 45%;
+}
+
+.featured-recipe h2 {
+    margin-right: 1%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -52%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 80%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+    margin-left: 4%;
+}
+
+.recipe-list article img {
+    width: 140%;
+    height: 40%;
+}
+
+.recipe-list article div h3 {
+    font-size: 1000%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15% 20%;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 550%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 35%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 40%;
+}
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(min-width:768px) {
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 8%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 5%;
+  margin-right: 1%;
+  font-size: 80%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-left: 21%;
+  font-size: 60%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 55vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 8%;
+    font-size: 70%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 16.2%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 12%;
+    font-size: 128%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    margin-left: 41%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+    font-size: 45%;
+}
+
+.featured-recipe h2 {
+    margin-right: 1%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -52%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 80%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+    margin-left: 4%;
+}
+
+.recipe-list article img {
+    width: 140%;
+    height: 40%;
+}
+
+.recipe-list article div h3 {
+    font-size: 1000%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15% 20%;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 550%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 45%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 40%;
+}
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(min-width:992px) {
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 8%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 4.4%;
+  margin-right: 1%;
+  font-size: 100%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-left: 20%;
+  font-size: 80%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 55vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 8%;
+    font-size: 110%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 20%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 12%;
+    font-size: 128%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    margin-left: 41%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+}
+
+.featured-recipe h2 {
+    margin-right: 5%;
+    font-size: 240%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -52%;
+    font-size: 200%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 120%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+    margin-left: -1%;
+    margin-bottom: 2%;
+}
+
+.recipe-list article img {
+    width: 280%;
+    height: 80%;
+}
+
+.recipe-list article {
+    margin-left: 10%;
+    padding-top: 80%;
+    padding-bottom: 60%;
+    padding-left: 180%;
+    padding-right: 180%;
+}
+
+.recipe-list article div h3 {
+    font-size: 2000%;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1200%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 75%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 40%;
+}
+}
+
+/* /768px TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQgY29uc2VjdGV0dXIgYWRpcGlzaWNpbmcgZWxpdC4gVmVsaXQgcXVvcyBwb3NzaW11cyBtYXhpbWUgbGF1ZGFudGl1bSB0ZW1wb3JpYnVzIGRlbGVjdHVzIGFyY2hpdGVjdG8gbGFib3Jpb3NhbSwgY3VwaWRpdGF0ZSBtb2xlc3RpYXMgY29uc2VjdGV0dXIgb2ZmaWNpYSB0ZW1wb3JlIGFkaXBpc2NpIG5vbiBtYWduYW0gc2FlcGUsIGRpc3RpbmN0aW8gdml0YWUsIGRpY3RhIGxpYmVybyE=/ */
+
+@media(min-width:1200px) {
+body {
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.NavBar {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+}
+
+nav {
+  float: none;
+}
+nav img{
+  width: 8%;
+  height: auto;
+}
+nav h3 {
+  color: white;
+  margin-top: 4%;
+  margin-right: 1%;
+  font-size: 110%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden; 
+  padding-left: 33%;
+  font-size: 80%;
+}
+nav ul li {
+  display: inline-flex;
+  font-size: 100%;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: rgb(220, 13, 13);
+  height: auto;
+  width: auto;
+  transition-duration: 1s;
+  transition-delay: 1ms;
+  border-radius: 25%;
+}
+
+/* Fondo de inicio */
+
+.fondonu{
+    min-height: 55vh;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(https://i.imgur.com/IuTkQOs.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Fin de fondo de inicio */
+
+/* Intro de la pagina */
+.Intro{
+    padding-top: 8%;
+    font-size: 110%;
+    margin-left: 2%;
+    color: snow;
+}
+.Intro h2 {
+    background-color: crimson;
+    border-radius: 6px;
+    width: 16.5%;
+    height: auto;
+    padding-left: 0.6%;
+    margin-top: 9%;
+    font-size: 128%;
+}
+
+/* Fin de Intro de la pagina */
+
+.featured-recipe {
+    margin: auto;
+    margin-left: 41%;
+    height: 15%;
+    width: 20%;
+    padding: 50px 0;
+}
+
+.featured-recipe h2 {
+    margin-right: 5%;
+    font-size: 240%;
+}
+
+/* Estilos para las tarjetas de recetas */
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170%;
+    height: auto;
+    margin-left: -52%;
+    font-size: 200%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+}
+
+.recipe-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.recipe-description {
+    text-align: center;
+    color: #666;
+}
+
+.btn-recipe {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-recipe:hover {
+    background-color: crimson;
+}
+
+/* Categorias */
+
+.more-recipes {
+    padding: 1px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.more-recipes h2 {
+    font-size: 120%;
+}
+
+.recipe-list {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 4%;
+    height: auto;
+    font-size: 6%;
+    margin-left: -1%;
+    margin-bottom: 2%;
+}
+
+.recipe-list article img {
+    width: 280%;
+    height: 80%;
+}
+
+.recipe-list article {
+    margin-left: 10%;
+    padding-top: 80%;
+    padding-bottom: 60%;
+    padding-left: 180%;
+    padding-right: 180%;
+}
+
+.recipe-list article div h3 {
+    font-size: 2000%;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1200%;
+}
+
+.btn:hover {
+    background-color: #ff8c8c;
+}
+
+/* Fin de Categorias */
+
+.recipe-item {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff6b6b;
+}
+
+.recipe-item p {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Carta inicial de pizza de pepperoni */
+
+.recipe-card {
+    border: 1px solid crimson;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card img {
+    margin-top: 6%;
+    width: 70%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 8% 16%;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 70%;
+}
+
+.recipe-card button:hover {
+    background-color: crimson;
+}
+
+.Bloque2{
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(https://i.imgur.com/LgNu6C3.png), no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+
+
+}
+.Bloque2 ul{
+  padding:0;
+}
+.Bloque2 li{
+  list-style: none;
+}
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 35% 20% 25% 30%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  color: white;
+  font-size: 85%;
+}
+.text-element-footer li{
+  line-height: 2;
+}
+.link-elements-footer li a{
+  color:#FFC300;
+}
+.element-footer1 img{
+  width: 15%;
+}
+.Copyright{
+  display: flex;
+  justify-content: space-around;
+
+  color: white;
+  font-size: .9rem;
+  max-width: 98.6%;
+  margin: 0 auto;
+  font-size: 70%;
+}
+}
